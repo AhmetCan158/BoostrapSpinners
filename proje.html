@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+
+    </div>
+
+    <title> Bootstrap İle Spinner Buttons</title>
+
+    <link rel="canonical" href="index.html">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <main role="main" class="container">
+      <h1 class="mt-5">Boostrap ile Spinner Buttons Projesi</h1>
+      <p class="lead">Bu projeyi oluştururken izlediğim adımları sitenin devamında açıklamaya çalıştım.</p>
+    
+    <div class="container border rounded mt-2">
+        <h2>Proje Hazırlıkları </h2>
+        <p>
+        Bilgisayarınızda henüz boostrap kurulumu yapmadıysanız,
+        <a href="https://getbootstrap.com/docs/4.4/getting-started/download/">bağlantıya tıklayarak kurulum işlemini gerçekleştirebilirsiniz.</a>
+        </p>
+        
+    </div>
+    
+    <div class="container border rounded mt-3">
+        <h2>Boostrap Nedir?</h2>
+        <p>
+            Bootstrap, Twitter tarafından geliştirilen ücretsiz, açık kaynak kodlu ve iş yükünü oldukça hafifleten HTML / CSS / JS kütüphanesidir. Neredeyse her web tarayıcı ile uyumlu altyapısı ve kütüphanesinde web tasarımcıların işini kolaylaştıracak birçok bileşeni barındırması sebebi ile kullanım alanı oldukça geniştir.
+        </p>
+        
+        <h2>Boostrap Ne İşe Yarar?</h2>
+        <p>
+            Bootstrap kütüphanesi, web sayfa tasarımlarını daha kolay bir hale getirerek, mobil cihazlar başta olmak üzere bir çok farklı ekran çözünürlüğüne uygun web siteleri yapılabilmesini sağlamaktadır. Gerek ücretsiz javascript ve icon kütüphane destekleri ile gerek ise hızlı ve işlevsel yapısı ile web tasarımcıların işini bir hayli kolaylaştırma, zaman kazandırmaktadır.
+        </p>
+        
+        <h2>Bootstrap Kurulum ve Kullanımı</h2>
+        <p>
+            <strong>Kurulum:</strong> İndirdiğiniz sıkıştırılmış dosyayı klasöre çıkartın. Daha sonra bootstrap.min.css veya bootstrap.css herhangi birini CSS klasörüne almanız yeterli.
+    
+    Çok gerekirse kendi stil dosyanızın içerisinden bazı klaslarda !important özelliğini kullanarak dilediğiniz kısımları özelleştirebilirsiniz. Bunun haricinde eğer web sitenizde sözdizimi, animasyon vb. javascript kullanacaksanız bootstrap.js dosyasını da indirerek yararlanabilirsiniz.
+        </p>
+        <p>
+            <strong>Kullanım:</strong>  CSS ve isteğe bağlı JS dosyalarını sayfa içerisine çağırdıktan sonra doğrudan HTML içerisinde kullanabilirsiniz. Kullanımı oldukça basittir.
+          </p>
+        
+    
+    
+    </div>
+    <div class="container border rounded mt-3">
+      <h2>Projeyi Oluşturma</h2>
+      <p>Bu projeyi yaparken Visual Studio Code uygulamasını kullandım. Fotoğrafta gördüğünüz New File kısmına tıklayarak yeni bir proje başlattım ve gerekli kodları yazmaya başladım  </p>
+      <img src="newFile.png" width="600" height="250">
+      <hr>
+      <h2>Spinners Eklemek </h2>
+      <p>Sayfanızın istediğiniz yerlerinde Spinners oluşturmak için gerekli komutları aşağıya ekledim.</p>
+      <xmp>
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+     </xmp>
+    </div>
+<div class="container border rounded mt-3">
+<h2>Spinners Renklendirme</h2>
+<p>Spinners istediğiniz şekilde renklendirmek için gerekli komutlar şu şekildedir;</p>
+ <xmp>
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-secondary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-success" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-danger" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-warning" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-info" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-light" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-border text-dark" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+ </xmp>
+</div> 
+<div class="container border rounded mt-3">
+  <h2>
+    Growing Spinner (Büyüyen Spinner)
+  </h2>
+    <p>
+      İsteğe bağlı spinnerları bunun gibi farklı görünüm sahibi yapabilirsiniz. 
+    </p>
+    <xmp>
+      <div class="spinner-grow" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </xmp>
+  </h2>
+</div>
+<div class="container border rounded mt-3">
+<h2>
+  Growing Spinner Renklendirme</h2>
+  <p>Growing Spinner istediğiniz rengi vermek için spinner ile aynı renk komutlarını kullanıyoruz</p>
+  <xmp>
+    <div class="spinner-grow text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-secondary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-danger" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-info" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-light" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-dark" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </xmp>
+</div>
+<div class="container border rounded mt-3">
+<h1>
+  Spinners Boyutlandırma
+</h1>
+<p>
+Diğer bileşenlerde hızla kullanılabilecek daha küçük bir spinner yapmak için .spinner-border-sm veya .spinner-grow-sm ekleyin.
+</p>
+<xmp>
+  <div class="spinner-border spinner-border-sm" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-grow spinner-grow-sm" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</xmp>
+</div>
+<div class="container border rounded mt-3">
+<h1>
+  Spinner Buttons
+</h1>
+<p>
+  Bir eylemin şu anda işlenmekte veya gerçekleşmekte olduğunu belirtmek için düğmeler içindeki döndürücüleri kullanın. Ayrıca, döndürme öğesindeki metni değiştirebilir ve gerektiğinde düğme metnini kullanabilirsiniz.
+</p>
+<xmp>
+  <button class="btn btn-primary" type="button" disabled>
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    <span class="sr-only">Loading...</span>
+  </button>
+  <button class="btn btn-primary" type="button" disabled>
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    Loading...
+  </button>
+</xmp>
+
+</div>
+
+  </body>
+
+</html>
